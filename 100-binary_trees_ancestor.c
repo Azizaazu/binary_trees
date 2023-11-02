@@ -35,7 +35,7 @@ binary_tree_t *binary_trees_ancestor(const binary_tree_t *first, const binary_tr
 		if (is_ancestor(ancestor, second))
 			return ((binary_tree_t *)ancestor);
 
-	ancestor = ancestor->parent;
+		ancestor = ancestor->parent;
 	}
 	return (NULL);
 }
